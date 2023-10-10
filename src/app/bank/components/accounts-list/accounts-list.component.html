@@ -1,0 +1,24 @@
+<table 
+*ngIf="list.length > 0"
+class="table table-success table-striped-columns  text-center">
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Account's Money</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr 
+        *ngFor="let item of list" >
+            <td>{{item.accountNumber}}</td>
+            <td>
+                <button 
+                (click)="delete(item.accountNumber)"
+                class="btn btn-warning">
+                    Delete Account
+                </button>
+            </td>
+        </tr>
+        
+    </tbody>
+  </table>

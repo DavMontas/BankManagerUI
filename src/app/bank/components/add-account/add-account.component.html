@@ -1,0 +1,18 @@
+<div class="container pt-5">
+    <h3>Add a New Account</h3>
+    <div class="mb-3">
+
+        <label 
+        class="form-label">New Account Amount</label>
+        
+        <input 
+        type="number"
+        [(ngModel)]="amount"
+        name="amount"
+        class="form-control" placeholder="...$500">
+      </div>
+      <button 
+        type="submit"
+        (click)="createAccount()"
+        class="btn btn-primary">Submit</button>
+</div>
